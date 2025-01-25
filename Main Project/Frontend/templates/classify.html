@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar Data Classification</title>
+    <link rel="stylesheet" href="classify.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classify Radar Data</h1>
+        
+        <div class="upload-section">
+            <label for="file-upload">Upload Radar Data:</label>
+            <input type="file" id="file-upload" accept=".wav, .txt, .csv, image/*">
+            <p id="file-name">No file chosen</p>
+            <button onclick="uploadData()">Classify Data</button>
+        </div>
+        
+        <div class="progress-section" id="progress-section" style="display: none;">
+            <p>Classification in progress...</p>
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <div class="results-section" id="results-section" style="display: none;">
+            <h2>Results</h2>
+            <p id="classification-result">Classification: </p>
+            <p id="confidence-level">Confidence Level: </p>
+            <div id="spectrogram-visual"></div>
+            <button onclick="downloadResults('pdf')">Download PDF</button>
+            <button onclick="downloadResults('csv')">Download CSV</button>
+            <button onclick="analyzeResults()">Analyze Results</button>
+        </div>
+    </div>
+    <script src="classify.js"></script>
+</body>
+</html>
