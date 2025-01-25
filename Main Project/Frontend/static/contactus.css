@@ -1,0 +1,87 @@
+/* contactus.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #2c3e50 0%, #2980b9 100%); /* Lighter background */
+  }
+  
+  #contact-us {
+    background-color: #ffffff;
+    padding: 25px;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 16px; /* Slightly more rounded */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    text-align: left; /* Align text to the left for better readability */
+  }
+  
+  #contact-us h2 {
+    font-size: 1.8rem; /* Slightly larger heading */
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 600; /* Bold heading for better emphasis */
+  }
+  
+  #contact-us p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.5; /* Improved line height for better readability */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 12px 0; /* Increased margin for better spacing */
+    font-size: 1.1rem; /* Increased font size for better legibility */
+    color: #333;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #0073e6;
+    display: inline-flex;
+    align-items: center; /* Align icon and text properly */
+    transition: color 0.3s ease; /* Smooth transition effect */
+  }
+  
+  ul li a:hover {
+    color: #005bb5;
+  }
+  
+  .email-icon {
+    margin-right: 10px;
+    color: #0073e6; /* Matching icon color with the link */
+    font-size: 1.2rem; /* Slightly larger icon */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    #contact-us {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    #contact-us h2 {
+      font-size: 1.6rem;
+    }
+  
+    #contact-us p {
+      font-size: 1rem;
+    }
+  
+    ul li {
+      font-size: 1rem;
+    }
+  }
+  
