@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="Explore the features and applications of AeroClassify's Micro-Doppler classification technology."/>
+  <meta property="og:title" content="Learn More - AeroClassify"/>
+  <meta property="og:description" content="Discover the transformative potential of Micro-Doppler technology with AeroClassify."/>
+  <meta property="og:image" content="image.PNG"/>
+  <title>Learn More - AeroClassify</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="learnmore.css"/>
+</head>
+
+<body class="font-roboto bg-gray-100 text-gray-800">
+  <header class="bg-teal-600 text-white p-6 text-center">
+    <h1 class="text-3xl font-bold">Got Questions? We've Got Answers!</h1>
+    <p class="mt-2 text-lg">Explore how AeroClassify operates, the science behind Micro-Doppler, and how it can revolutionize various industries.</p>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6">
+    <section class="text-center mb-12">
+      <img alt="Micro-Doppler technology illustration" class="mx-auto mb-6" height="400" src="assets/image.PNG" width="600" loading="lazy"/>
+      <nav class="flex justify-center space-x-4">
+        <button class="tab-link px-4 py-2 bg-teal-600 text-white rounded-full" data-tab="faq" aria-label="FAQ Section">FAQ</button>
+        <button class="tab-link px-4 py-2 bg-gray-200 text-gray-800 rounded-full" data-tab="features" aria-label="Features Section">Features</button>
+        <button class="tab-link px-4 py-2 bg-gray-200 text-gray-800 rounded-full" data-tab="applications" aria-label="Applications Section">Applications</button>
+        <button class="tab-link px-4 py-2 bg-gray-200 text-gray-800 rounded-full" data-tab="videos" aria-label="Videos Section">Videos</button>
+      </nav>
+    </section>
+
+    <section class="tab-content" id="faq">
+      <h2 class="text-2xl font-bold mb-6">FAQ – Common Questions</h2>
+      <div class="space-y-4">
+        <div class="bg-white p-4 rounded shadow">
+          <button class="w-full text-left font-semibold">What is micro-Doppler technology?</button>
+          <div class="hidden mt-2">Micro-Doppler technology analyzes the micro-movements of objects using radar signals to classify objects based on their unique movement patterns.</div>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <button class="w-full text-left font-semibold">Why use spectrograms for classification?</button>
+          <div class="hidden mt-2">Spectrograms provide a visual representation of the signal's frequency spectrum, aiding in accurate classification of objects based on their unique frequency patterns.</div>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <button class="w-full text-left font-semibold">How does the model process radar data?</button>
+          <div class="hidden mt-2">Radar data is converted into spectrograms, which are then analyzed by machine learning algorithms to classify objects.</div>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <button class="w-full text-left font-semibold">Is real-time classification possible?</button>
+          <div class="hidden mt-2">Yes, our algorithms enable real-time radar data classification, providing immediate results.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content hidden" id="features">
+      <h2 class="text-2xl font-bold mb-6">Key Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow text-center">
+          <i class="fas fa-check-circle text-teal-600 text-4xl mb-4"></i>
+          <h3 class="font-semibold text-xl">High Classification Accuracy</h3>
+          <p class="mt-2">Our model ensures high accuracy in classifying radar data, making it reliable for various applications.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <i class="fas fa-clock text-teal-600 text-4xl mb-4"></i>
+          <h3 class="font-semibold text-xl">Real-Time Processing</h3>
+          <p class="mt-2">Experience real-time data processing with our advanced algorithms, providing immediate results.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <i class="fas fa-cogs text-teal-600 text-4xl mb-4"></i>
+          <h3 class="font-semibold text-xl">Customizable Model</h3>
+          <p class="mt-2">Tailor the model to fit your specific needs and requirements, ensuring optimal performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content hidden" id="applications">
+      <h2 class="text-2xl font-bold mb-6">Applications</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow text-center">
+          <img alt="Wildlife safety application" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/ojMK6f3RIO0KF6TubIuZHcYu6fWs53GWN8wJq3i4IgmkPVHUA.jpg" width="300"/>
+          <h3 class="font-semibold text-xl">Wildlife Safety</h3>
+          <p class="mt-2">Preventing bird strikes and ensuring wildlife safety by detecting and classifying birds in real-time.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <img alt="Drone detection application" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/s21y9nbTztJkLxQXMZWJJeDXQ9OgmWvzUlMsIewZOkfTfUdQB.jpg" width="300"/>
+          <h3 class="font-semibold text-xl">Drone Detection</h3>
+          <p class="mt-2">Monitoring restricted zones and detecting unauthorized drones to ensure security and safety.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <img alt="Disaster management application" class="mx-auto mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/ZGHRo6pZ3WIOBxnjiI77HfPgZs5FiuqpnT0fchpqy00nPVHUA.jpg" width="300"/>
+          <h3 class="font-semibold text-xl">Disaster Management</h3>
+          <p class="mt-2">Locating drones during emergencies and aiding in disaster management efforts with accurate classification.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content hidden" id="videos">
+      <h2 class="text-2xl font-bold mb-6">Watch and Learn</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow text-center">
+          <iframe allowfullscreen="" class="w-full h-48" frameborder="0" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+          <h3 class="font-semibold text-xl mt-4">Overview Video</h3>
+          <p class="mt-2">Introduction to micro-Doppler technology and its applications.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <iframe allowfullscreen="" class="w-full h-48" frameborder="0" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+          <h3 class="font-semibold text-xl mt-4">Demo Video</h3>
+          <p class="mt-2">Showing radar data classification in action and its real-time capabilities.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-center">
+          <iframe allowfullscreen="" class="w-full h-48" frameborder="0" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+          <h3 class="font-semibold text-xl mt-4">Insights[_{{{CITATION{{{_1{](https://github.com/ronald-si2018/Projeto-Job-Board/tree/412db4ca20e7fb81c9b0018150b20c8ad4e86040/resources%2Fviews%2Findex2.blade.php)
+            <h3 class="font-semibold text-xl mt-4">Insights Video</h3>
+            <p class="mt-2">Explaining spectrogram analysis and its benefits in detail.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <footer class="bg-teal-600 text-white p-6 text-center">
+      <p>Explore more about Micro-Doppler today!</p>
+      <p class="mt-2 text-sm">© 2025 AeroClassify. All Rights Reserved.</p>
+    </footer>
+  
+    <script src="learnmore.js"></script>
+  </body>
+  </html>
+  
