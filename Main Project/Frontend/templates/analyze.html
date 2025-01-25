@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css">
+    <link rel="stylesheet" href="analyze.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analytics Dashboard</h1>
+        <div class="filters">
+            <label for="objectType">Object Type:</label>
+            <select id="objectType">
+                <option value="all">All</option>
+                <option value="bird">Bird</option>
+                <option value="drone">Drone</option>
+            </select>
+            <label for="timeRange">Time Range:</label>
+            <input type="date" id="startDate">
+            <input type="date" id="endDate">
+            <button onclick="applyFilters()">Apply Filters</button>
+        </div>
+        <div class="chart-container">
+            <canvas id="barChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="pieChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="lineChart"></canvas>
+        </div>
+        <div id="metrics">
+            <h2>Summary Metrics</h2>
+            <p>Total Classifications: <span id="totalClassifications"></span></p>
+            <p>Bird Count: <span id="birdCount"></span></p>
+            <p>Drone Count: <span id="droneCount"></span></p>
+            <p>Success Rate: <span id="successRate"></span></p>
+            <p>Failure Rate: <span id="failureRate"></span></p>
+            <h2>Performance Metrics</h2>
+            <p>Precision: <span id="precision"></span></p>
+            <p>Recall: <span id="recall"></span></p>
+            <p>F1 Score: <span id="f1Score"></span></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="analyze.js"></script>
+</body>
+</html>
