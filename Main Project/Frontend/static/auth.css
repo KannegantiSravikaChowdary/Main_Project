@@ -1,0 +1,92 @@
+/* Authentication Form Styles */
+.auth-form {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    border-radius: 12px; /* Softer rounded corners */
+    text-align: center; /* Center-align text */
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.auth-form h2 {
+    font-size: 2.4rem; /* Larger font size for heading */
+    margin-bottom: 25px;
+    color: #2c3e50; /* Darker heading color */
+}
+
+.auth-form input {
+    width: calc(100% - 24px); /* Adjust width to fit within borders */
+    padding: 12px;
+    margin: 10px auto 20px auto; /* Consistent margins */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth border and shadow transition */
+}
+
+.auth-form input::placeholder {
+    color: #999; /* Style the placeholder text */
+}
+
+.auth-form input:focus {
+    border-color: #3498db; /* Sky Blue */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Add shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.auth-form button {
+    width: calc(100% - 24px); /* Adjust width to fit within borders */
+    padding: 15px;
+    background-color: #27ae60; /* Green */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background transition and scaling */
+}
+
+.auth-form button:hover {
+    background-color: #1e8449; /* Darker Green */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.auth-form p {
+    text-align: center;
+    margin-top: 25px; /* More space above the text */
+    font-size: 1rem;
+}
+
+.auth-form p a {
+    color: #e74c3c; /* Red */
+    text-decoration: none;
+    font-weight: bold; /* Bold the link text */
+}
+
+.auth-form p a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333; /* Dark Grey */
+    background: linear-gradient(120deg, #2c3e50 0%, #2980b9 100%); /* Dark blue gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Remove default margin */
+    padding: 20px;
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
